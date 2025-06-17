@@ -3,11 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <meta name="author" content="Grigoriy Ankudovich">
+    <title>Online Book Library</title>
     <link rel="stylesheet" href="./style/style.css">
     <script src="./src/main.js" defer></script>
 </head>
 <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">  </h1>
+            <div class="header__action">
+                <button class="header__sign-in">Sign in</button>
+                <div class="header-filter">
+                    <ul class="header-list">
+                        <li>
+                            <span class="sort-list__title">Filter</span>
+                            <span class="header__arrow arrow"></span>
+                            <ul class="sort-list__options sort-options">
+                                <li class="sort-options__option">
+                                    <span>Genre</span>
+                                    <ul class="sub-sort-list">
+                                        <li class="sub-sort-option">Roman</li>
+                                        <li class="sub-sort-option">Non-Fiction</li>
+                                    </ul>
+                                </li>
+                                <li class="sort-options__option">
+                                    <span>Year</span>
+                                    <ul class="sub-sort-list">
+                                        <li class="sub-sort-option">1900</li>
+                                        <li class="sub-sort-option">2024</li>
+                                    </ul>
+                                </li>
+                                <li class="sort-options__option">
+                                    <span>Language</span>
+                                    <ul class="sub-sort-list">
+                                        <li class="sub-sort-option">English</li>
+                                        <li class="sub-sort-option">Українська</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-sort">
+                    <ul class="header-list">
+                        <li>
+                            <span class="sort-list__title">Sort</span>
+                            <span class="header__arrow arrow"></span>
+                            <ul class="sort-list__options sort-options">
+                                <li class="sort-options__option">Authort(A-Z)</li>
+                                <li class="sort-options__option">Title(A-Z)</li>
+                                <li class="sort-options__option">Year</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <aside class="sidebar">
+                <h2 class="filter-title">Filter</h2>
+                <section class="filter-content filter">
+                    <h3 class="filter__genre-title">Genre</h3>
+                    <section class="filter__genre-content genre-content" >
+                        <p>
+                            <input type="checkbox" class="genre-content__checkbox" id="genre1" name="checkGenre">
+                            <label for="genre1" class="genre-content__text">Roman</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="genre-content__checkbox" id="genre2" name="checkGenre">
+                            <label for="genre2" class="genre-content__text"> Non-Fiction</label>
+                        </p>
+                    </section>
+                    <h3 class="filter__author-title">Author</h3>
+                    <section class="filter__author-content author-content">
+                        <input type="text" class="author-content__input" placeholder="Enter author">
+                    </section>
+                    <h3 class="filter__year-title">Year</h3>
+                    <section class="filter__year-content year-content" >
+                        <p>
+                            <input type="checkbox" class="year-content__checkbox" id="year1">
+                            <label for="year1" class="year-content__text">1900</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="year-content__checkbox" id="year2">
+                            <label for="year2" class="year-content__text"> 2024 </label>
+                        </p>
+                    </section>
+                    <h3 class="filter__language-title">Language</h3>
+                    <section class="filter__language-content language-content" >
+                        <p>
+                            <input type="checkbox" class="language-content__checkbox" id="language1">
+                            <label for="language1" class="language-content__text"> English </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="language-content__checkbox" id="language2">
+                            <label for="language2" class="language-content__text"> Українська</label>
+                        </p>
+                    </section>
+                </section>
+            </aside>
+            <section class="book-content__header">
+                <h2 class="book-content__title">Featured</h2>
+                <div class="sort-container">
+                    <ul class="sort-list">
+                        <li>
+                            <span class="sort-list__title">Sort by:</span>
+                            <span class="sort-list__arrow arrow"></span>
+                            <ul class="sort-list__options sort-options">
+                                <li class="sort-options__option">Authort(A-Z)</li>
+                                <li class="sort-options__option">Title(A-Z)</li>
+                                <li class="sort-options__option">Year</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="book-content">
+                <section class="book-content__books books">
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/gatsby.jpg" alt="The Great Gatsby">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Great Gatsby</a>
+                            <p class="books__author">E. Scott Fitzgerald</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/mockingbird.jpg" alt="To Kill a Mockingbird">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">To Kill a Mockingbird</a>
+                            <p class="books__author">Harper Lee</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/1984.jpg" alt="The Great Gatsby">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">1984</a>
+                            <p class="books__author">George Orwell</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/catcher.jpg" alt="The Catcher in the Rye">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Catcher in the Rye</a>
+                            <p class="books__author">J.D. Salinger</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/hobbit.jpg" alt="The Hobbit">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Hobbit</a>
+                            <p class="books__author">J.R.R. Tolkien</p> 
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/sapiens.jpg" alt="Sapiens">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">Sapiens</a>
+                            <p class="books__author">Yuval Noah Harari</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/gatsby.jpg" alt="The Great Gatsby">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Great Gatsby</a>
+                            <p class="books__author">E. Scott Fitzgerald</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/mockingbird.jpg" alt="To Kill a Mockingbird">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">To Kill a Mockingbird</a>
+                            <p class="books__author">Harper Lee</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/1984.jpg" alt="1984">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">1984</a>
+                            <p class="books__author">George Orwell</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/catcher.jpg" alt="The Catcher in the Rye">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Catcher in the Rye</a>
+                            <p class="books__author">J.D. Salinger</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/hobbit.jpg" alt="The Hobbit">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Hobbit</a>
+                            <p class="books__author">J.R.R. Tolkien</p> 
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/sapiens.jpg" alt="Sapiens">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">Sapiens</a>
+                            <p class="books__author">Yuval Noah Harari</p>
+                        </div>
+                    </div>
+                                        <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/gatsby.jpg" alt="The Great Gatsby">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Great Gatsby</a>
+                            <p class="books__author">E. Scott Fitzgerald</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/mockingbird.jpg" alt="To Kill a Mockingbird">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">To Kill a Mockingbird</a>
+                            <p class="books__author">Harper Lee</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/1984.jpg" alt="1984">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">1984</a>
+                            <p class="books__author">George Orwell</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/catcher.jpg" alt="The Catcher in the Rye">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Catcher in the Rye</a>
+                            <p class="books__author">J.D. Salinger</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/hobbit.jpg" alt="The Hobbit">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Hobbit</a>
+                            <p class="books__author">J.R.R. Tolkien</p> 
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/sapiens.jpg" alt="Sapiens">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">Sapiens</a>
+                            <p class="books__author">Yuval Noah Harari</p>
+                        </div>
+                    </div>
+                                        <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/gatsby.jpg" alt="The Great Gatsby">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Great Gatsby</a>
+                            <p class="books__author">E. Scott Fitzgerald</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/mockingbird.jpg" alt="To Kill a Mockingbird">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">To Kill a Mockingbird</a>
+                            <p class="books__author">Harper Lee</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/1984.jpg" alt="1984">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">1984</a>
+                            <p class="books__author">George Orwell</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/catcher.jpg" alt="The Catcher in the Rye">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Catcher in the Rye</a>
+                            <p class="books__author">J.D. Salinger</p>
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/hobbit.jpg" alt="The Hobbit">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">The Hobbit</a>
+                            <p class="books__author">J.R.R. Tolkien</p> 
+                        </div>
+                    </div>
+                    <div class="books__item">
+                        <a href="#" class="books__image">
+                            <img src="./img/sapiens.jpg" alt="Sapiens">
+                        </a>
+                        <div class="book__info">
+                            <a href="#" class="books__title">Sapiens</a>
+                            <p class="books__author">Yuval Noah Harari</p>
+                        </div>
+                    </div>
+                </section>
 
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__copy">
+                &copy 2025
+            </div>
+        </footer>
+    </div>  
 </body>
 </html>
