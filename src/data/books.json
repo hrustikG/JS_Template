@@ -1,0 +1,152 @@
+[
+    {
+        "id": "1",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": ["Roman", "Classic"],
+        "year": 1925,
+        "language": "English",
+        "image": "gatsby.jpg",
+        "description": "A classic novel depicting the Jazz Age in America, focusing on the mysterious millionaire Jay Gatsby and his unrequited love for Daisy Buchanan."
+    },
+    {
+        "id": "2",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": ["Roman", "Classic"],
+        "year": 1960,
+        "language": "English",
+        "image": "mockingbird.jpg",
+        "description": "A powerful story about racial injustice in the American South, seen through the eyes of young Scout Finch."
+    },
+    {
+        "id": "3",
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": ["Science Fiction", "Dystopian"],
+        "year": 1949,
+        "language": "English",
+        "image": "1984.jpg",
+        "description": "A chilling dystopian novel that explores themes of totalitarianism, surveillance, and suppression of individuality."
+    },
+    {
+        "id": "4",
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": ["Roman", "Coming-of-Age"],
+        "year": 1951,
+        "language": "English",
+        "image": "catcher.jpg",
+        "description": "A controversial novel about teenage angst and alienation, narrated by the disenchanted Holden Caulfield."
+    },
+    {
+        "id": "5",
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": ["Fantasy"],
+        "year": 1937,
+        "language": "English",
+        "image": "hobbit.jpg",
+        "description": "A fantastical adventure that follows Bilbo Baggins on a quest to reclaim treasure from the dragon Smaug."
+    },
+    {
+        "id": "6",
+        "title": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "genre": ["Non-Fiction", "History"],
+        "year": 2011,
+        "language": "English",
+        "image": "sapiens.jpg",
+        "description": "A compelling overview of the history of humanity, from the Stone Age to the twenty-first century."
+    },
+    {
+        "id": "7",
+        "title": "Кобзар",
+        "author": "Тарас Шевченко",
+        "genre": ["Поезія", "Класика"],
+        "year": 1840,
+        "language": "Ukrainian",
+        "image": "kobzar.jpg",
+        "description": "Збірка поетичних творів видатного українського поета Тараса Шевченка, що вважається основою сучасної української літератури."
+    },
+    {
+        "id": "8",
+        "title": "Тіні забутих предків",
+        "author": "Михайло Коцюбинський",
+        "genre": ["Повість", "Класика"],
+        "year": 1911,
+        "language": "Ukrainian",
+        "image": "shadows.jpg",
+        "description": "Класична повість про гуцульське життя, кохання та містику на тлі природи Карпат."
+    },
+    {
+        "id": "9",
+        "title": "Тигролови",
+        "author": "Іван Багряний",
+        "genre": ["Пригоди", "Роман"],
+        "year": 1944,
+        "language": "Ukrainian",
+        "image": "tyhrolovy.jpg",
+        "description": "Пригодницький роман про українського інженера-авіатора, який втікає з радянського ГУЛАГу і шукає порятунку в тайзі, де стикається з дикою природою та людськими долями."
+    },
+    {
+        "id": "10",
+        "title": "Лісова пісня",
+        "author": "Леся Українка",
+        "genre": ["Драма-феєрія", "Класика"],
+        "year": 1911,
+        "language": "Ukrainian",
+        "image": "lisova_pisnya.jpg",
+        "description": "Один із найвідоміших творів Лесі Українки, драма-феєрія, що переплітає світ людей і світ природи, міфологію та реальність, розкриваючи теми кохання, зради та гармонії з природою."
+    },
+    {
+        "id": "11",
+        "title": "Кайдашева сім'я",
+        "author": "Іван Нечуй-Левицький",
+        "genre": ["Повість", "Класика", "Гумор"],
+        "year": 1878,
+        "language": "Ukrainian",
+        "image": "kaydasheva_simya.jpg",
+        "description": "Сатирично-побутова повість, що змальовує життя типової української селянської родини, її повсякденні конфлікти та суперечки, часто комічні за своєю суттю."
+    },
+    {
+        "id": "12",
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": ["Romance", "Classic"],
+        "year": 1813,
+        "language": "English",
+        "image": "pride_prejudice.jpg",
+        "description": "A classic novel about the emotional development of Elizabeth Bennet, who learns the error of making hasty judgments and comes to appreciate the difference between the superficial and the essential."
+    },
+    {
+        "id": "13",
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "genre": ["Fantasy", "Epic"],
+        "year": 1954,
+        "language": "English",
+        "image": "lord_of_rings.jpg",
+        "description": "An epic high-fantasy adventure set in Middle-earth, following the hobbit Frodo Baggins as he attempts to destroy the One Ring."
+    },
+    {
+        "id": "14",
+        "title": "To the Lighthouse",
+        "author": "Virginia Woolf",
+        "genre": ["Modernist", "Novel"],
+        "year": 1927,
+        "language": "English",
+        "image": "to_the_lighthouse.jpg",
+        "description": "A landmark novel of modernist literature, focusing on the Ramsay family and their visits to the Isle of Skye in Scotland, exploring themes of loss, subjectivity, and the passage of time."
+    },
+    {
+        "id": "15",
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "genre": ["Science Fiction", "Fantasy"],
+        "year": 1965,
+        "language": "English",
+        "image": "dune.jpg",
+        "description": "A science fiction epic set in a distant future amidst a feudal interstellar empire where noble houses control planetary fiefs."
+    }
+]
